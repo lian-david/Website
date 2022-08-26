@@ -33,12 +33,6 @@ h1 {
     font-size: 3em;
 }
 
-form {
-    padding: 5px;
-    margin: auto;
-    text-align: left;
-}
-
 label {
     display: block;
     margin-top: 30px;
@@ -48,6 +42,7 @@ label {
 h2 {
     font-size: 2em;
     color: rgb(36, 41, 98);
+    margin-left: 6vw;
 }
 
 button {
@@ -73,3 +68,52 @@ img {
     grid-column: 1;
 }
 
+a:hover, a:active, a:focus {
+    color: rgb(89, 44, 226);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    font-size: 0.9em;
+    gap: 20px;
+    justify-content: center;
+    margin: 5em;
+}
+
+main aside {
+    grid-column: 1;
+    grid-row: 1/5;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+main section {
+    grid-column: 2;
+}
+
+footer {
+    margin: 4em;
+}
+
+footer a {
+    padding: 0.5em;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 6vw;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact form {
+    grid-column: 1;
+}
+
+.contact img {
+    grid-column: 2;
+    max-height: 30vh;
+    max-width: 30vw;
+}
