@@ -4,12 +4,16 @@ body {
     font-family: 'Nanum Myeongjo', serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 nav ul {
     list-style-type: none;
     text-align: center;
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 5%;
 }
 
@@ -19,7 +23,7 @@ nav li > a {
     font-weight: bolder;
 }
 
-nav li > a:hover, nav li > a:active{
+nav li > a:hover, nav li > a:active {
     color: rgb(89, 44, 226);
 }
 
@@ -27,6 +31,15 @@ h1 {
     color: rgb(36, 41, 98);
     text-align: center;
     font-size: 3em;
+}
+
+h1 a {
+    text-decoration: none;
+    color: rgb(36, 41, 98);
+}
+
+h1 a:hover, h1 a:focus {
+    color: rgb(36, 41, 98);
 }
 
 label {
@@ -38,7 +51,7 @@ label {
 h2 {
     font-size: 2em;
     color: rgb(36, 41, 98);
-    margin-left: 6vw;
+    margin-left: 2rem;
 }
 
 button {
@@ -63,8 +76,17 @@ img {
     max-width: 100%;
 }
 
-.gallery img:hover {
+.gallery figure:hover {
     opacity: 0.8;
+}
+
+figcaption {
+    text-align: center;
+    opacity: 0;
+}
+
+.gallery figure:is(:hover) figcaption {
+    opacity: 1;
 }
 
 a:hover, a:active, a:focus {
@@ -105,7 +127,12 @@ main aside {
         grid-area: section;
         margin-right: 20%;
     }
-    
+
+    nav ul {
+        display: inline-flex;
+        justify-content: center;
+        gap: 5%;
+    }
 }
 
 main section {
@@ -114,6 +141,7 @@ main section {
 
 footer {
     margin: 4em;
+    margin-top: 6em;
 }
 
 footer a {
@@ -125,6 +153,7 @@ footer a {
     grid-template-columns: 1fr 1fr;
     margin: 6vw;
     justify-content: center;
+    text-align: center;
     gap: 20px;
 }
 
@@ -136,4 +165,17 @@ footer a {
     grid-column: 2;
     max-height: 30vh;
     max-width: 30vw;
+}
+
+input, textarea {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+article {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+article p {
+    margin: 5rem auto;
 }

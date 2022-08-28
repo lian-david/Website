@@ -8,17 +8,18 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>LIAN DAVID</h1>
+    <h1><a href="index.html">LIAN DAVID</a></h1>
     <nav>
         <ul>
             <li><a href="index.html">About</a></li>
             <li><a href="photography.html">Photography</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <h2 >Contact</h2>
     <main class="contact">
-        <form action="mailto:liandavid303@gmail.com" method="get">
+        <form action="https://formspree.io/f/xrgdboje" method="post">
             <div>
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" required>
@@ -29,11 +30,19 @@
             </div>
             <div>
                 <label for="message">Message</label>
-                <textarea rows="5" cols="17" required></textarea>
+                <textarea rows="5" cols="20" name="message" required></textarea>
             </div>
             <button type="submit">Submit</button>
         </form>
         <img src="images/profile2.jpg" alt="Lian Profile">
     </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/lian-david-436304230/" target="_blank">
+            <img src="images/linkedin.svg" alt="LinkedIn Logo">
+        </a>
+        <a href="https://github.com/lian-david" target="_blank">
+            <img src="images/github.svg" alt="GitHub Logo">
+        </a>
+    </footer>
 </body>
 </html>
